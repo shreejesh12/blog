@@ -498,3 +498,140 @@ p #copy {
     object-fit: cover;
 }
 
+.comment-box input[type="submit"]:hover {
+    background-color: #867a68;
+}
+
+.feedback-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #D4CFCF;
+    margin-top: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.feedback-text {
+    width: 50%;
+}
+
+.feedback-text h1 {
+    font-size: 28px;
+    color: #444;
+}
+
+.feedback-form {
+    width: 50%;
+}
+
+.feedback-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form label {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.feedback-form button {
+    background-color: #6E5643;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feedback-form button:hover {
+    background-color: #867a68;
+}
+
+#feedbackResponse {
+    font-size: 14px;
+    color: #444;
+    margin-top: 20px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000000;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Image gallery in the right section */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .left-content, .right-section {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .right-section {
+        margin-top: 20px;
+    }
+
+    .feedback-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .feedback-text, .feedback-form {
+        width: 100%;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+    }
+
+    .navbar-list li {
+        margin: 10px 0;
+    }
+
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
